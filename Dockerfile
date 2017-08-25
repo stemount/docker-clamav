@@ -11,7 +11,6 @@ RUN wget https://www.clamav.net/downloads/production/clamav-${CLAM_VERSION}.tar.
 
 RUN  mkdir /usr/local/share/clamav && mkdir /var/lib/clamav
 
-
 RUN wget -O /var/lib/clamav/main.cvd http://database.clamav.net/main.cvd && \
     wget -O /var/lib/clamav/daily.cvd http://database.clamav.net/daily.cvd && \
     wget -O /var/lib/clamav/bytecode.cvd http://database.clamav.net/bytecode.cvd
